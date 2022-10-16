@@ -83,3 +83,19 @@ Sun 16 Oct 2022 04:38:58 PM UTC:
  tests:  2|2
 total_score: 20/70
 ed8e019
+Sun 16 Oct 2022 10:04:50 PM UTC: 
+ heap.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:38:11: error: invalid type argument of ‘->’ (have ‘heapElem’ {aka ‘struct nodo’})
+   38 |   elemento->data = data;
+      |           ^~
+heap.c:39:11: error: invalid type argument of ‘->’ (have ‘heapElem’ {aka ‘struct nodo’})
+   39 |   elemento->priority = priority;
+      |           ^~
+heap.c:41:6: error: expected expression before ‘)’ token
+   41 |   if()
+      |      ^
+Compilation failed
+36ff176

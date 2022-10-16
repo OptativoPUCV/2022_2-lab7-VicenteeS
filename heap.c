@@ -34,9 +34,9 @@ void* heap_top(Heap* pq)
 
 void heap_push(Heap* pq, void* data, int priority)
 {
-  heapElem elemento;
-  elemento->data = data;
-  elemento->priority = priority;
+  //heapElem elemento;
+  //elemento->data = data;
+ // elemento->priority = priority;
 
   //if()
 }

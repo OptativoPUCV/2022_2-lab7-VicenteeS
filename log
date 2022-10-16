@@ -2,3 +2,14 @@ Sun 16 Oct 2022 04:00:22 PM UTC:
  tests:  0|4
 total_score: 0/70
 3e2d894
+Sun 16 Oct 2022 04:09:19 PM UTC: 
+ heap.c | 10 ++++++++--
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+test.c: In function ‘createHeap’:
+heap.c:38:16: error: ‘h’ is used uninitialized in this function [-Werror=uninitialized]
+   38 |   h->heapArray = (heapElem*) malloc (sizeof(heapElem)*3);
+      |   ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2202a9c

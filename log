@@ -67,3 +67,13 @@ heap.c:22:17: error: invalid type argument of unary ‘*’ (have ‘heapElem’
       |                 ^~~~~~~~~~~~~~~~~
 Compilation failed
 bc3c568
+Sun 16 Oct 2022 04:38:30 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_top’:
+heap.c:23:14: error: invalid type argument of ‘->’ (have ‘heapElem’ {aka ‘struct nodo’})
+   23 |   void *d = e->data;
+      |              ^~
+Compilation failed
+7188d79

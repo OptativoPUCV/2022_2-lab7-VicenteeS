@@ -19,7 +19,7 @@ typedef struct Heap{
 
 void* heap_top(Heap* pq)
 {
-  heapElem* e = *pq->heapArray[0];
+  heapElem e = pq->heapArray[0];
   void *d = e->data;
   
   if(pq->size > 0)

@@ -13,3 +13,9 @@ heap.c:38:16: error: ‘h’ is used uninitialized in this function [-Werror=uni
 cc1: all warnings being treated as errors
 Compilation failed
 2202a9c
+Sun 16 Oct 2022 04:09:58 PM UTC: 
+ heap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  1|3
+total_score: 10/70
+67d3140

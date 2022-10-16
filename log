@@ -57,3 +57,13 @@ heap.c:22:17: error: incompatible types when initializing type ‘heapElem *’ 
       |                 ^~
 Compilation failed
 18f59a6
+Sun 16 Oct 2022 04:38:09 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_top’:
+heap.c:22:17: error: invalid type argument of unary ‘*’ (have ‘heapElem’ {aka ‘struct nodo’})
+   22 |   heapElem* e = *pq->heapArray[0];
+      |                 ^~~~~~~~~~~~~~~~~
+Compilation failed
+bc3c568

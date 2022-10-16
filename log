@@ -99,3 +99,16 @@ heap.c:41:6: error: expected expression before ‘)’ token
       |      ^
 Compilation failed
 36ff176
+Sun 16 Oct 2022 10:05:21 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:38:11: error: invalid type argument of ‘->’ (have ‘heapElem’ {aka ‘struct nodo’})
+   38 |   elemento->data = data;
+      |           ^~
+heap.c:39:11: error: invalid type argument of ‘->’ (have ‘heapElem’ {aka ‘struct nodo’})
+   39 |   elemento->priority = priority;
+      |           ^~
+Compilation failed
+b0cd5ae

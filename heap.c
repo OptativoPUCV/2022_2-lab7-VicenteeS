@@ -38,7 +38,7 @@ void heap_push(Heap* pq, void* data, int priority)
   elemento->data = data;
   elemento->priority = priority;
 
-  if()
+  //if()
 }
 
 

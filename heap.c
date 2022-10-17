@@ -42,7 +42,7 @@ void heap_push(Heap* pq, void* data, int priority)
   if(pq->size == pq->capac)
   {
     pq->capac = (pq->capac*2) + 1;
-    pq->heapArray = (heapElem *) realloc (pq->heapArray, pq->capac); 
+    pq->heapArray = (heapElem *) realloc (pq->heapArray, sizeof(heapElem)*pq->capac); 
   }
   pq->heapArray[pq->size] = elemento;
   
@@ -68,11 +68,11 @@ void heap_pop(Heap* pq){
 Heap* createHeap()
 {
   Heap* h = (Heap*) malloc (sizeof(Heap));
-  
-  h->heapArray = (heapElem*) malloc (sizeof(heapElem)*3);
-  
+
   h->size = 0;
   h->capac = 3;
+  
+  h->heapArray = (heapElem*) malloc (sizeof(heapElem)*h->capac);
   
   return (h);
 }

@@ -363,3 +363,18 @@ heap.c:45:32: error: expected expression before ‘)’ token
       |                                ^
 Compilation failed
 0389259
+Mon 17 Oct 2022 12:44:36 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:45:22: error: ‘heapArray’ undeclared (first use in this function)
+   45 |     pq->heapArray = (heapArray) realloc (pq->heapArray, pq->capac);
+      |                      ^~~~~~~~~
+heap.c:45:22: note: each undeclared identifier is reported only once for each function it appears in
+heap.c:45:32: error: expected ‘;’ before ‘realloc’
+   45 |     pq->heapArray = (heapArray) realloc (pq->heapArray, pq->capac);
+      |                                ^~~~~~~~
+      |                                ;
+Compilation failed
+a330eb6

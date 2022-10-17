@@ -50,8 +50,8 @@ void heap_push(Heap* pq, void* data, int priority)
   {
     if(elemento.priority > pq->heapArray[(pq->size - 1)/2].priority)
     {
-      aux = pq->heapArray[(size-1)/2];
-      pq->heapArray[(size-1)/2] = pq->heapArray[size];
+      aux = pq->heapArray[(pq->size - 1)/2];
+      pq->heapArray[(pq->size - 1)/2] = pq->heapArray[size];
       pq->heapArray[size] = aux;
     }
   }

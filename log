@@ -118,3 +118,25 @@ Sun 16 Oct 2022 10:05:36 PM UTC:
  tests:  2|2
 total_score: 20/70
 05536d1
+Mon 17 Oct 2022 12:12:43 AM UTC: 
+ heap.c | 25 +++++++++++++++++++++----
+ 1 file changed, 21 insertions(+), 4 deletions(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:43:5: error: ‘capac’ undeclared (first use in this function)
+   43 |     capac = capac*2 +1;
+      |     ^~~~~
+heap.c:43:5: note: each undeclared identifier is reported only once for each function it appears in
+heap.c:46:17: error: ‘size’ undeclared (first use in this function)
+   46 |   pq->heapArray[size] = elemento;
+      |                 ^~~~
+heap.c:49:18: error: invalid operands to binary != (have ‘heapElem’ {aka ‘struct nodo’} and ‘heapElem’ {aka ‘struct nodo’})
+   49 |   while(elemento != pq->heapArray[0])
+      |                  ^~ ~~~~~~~~~~~~~~~~
+      |                                  |
+      |                                  heapElem {aka struct nodo}
+heap.c:55:27: error: incompatible types when assigning to type ‘int’ from type ‘heapElem’ {aka ‘struct nodo’}
+   55 |       elemento.priority = aux;
+      |                           ^~~
+Compilation failed
+395d7d1

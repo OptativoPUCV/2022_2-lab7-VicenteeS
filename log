@@ -306,3 +306,15 @@ heap.c:54:55: error: ‘size’ undeclared (first use in this function)
 heap.c:54:55: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 2bce9bd
+Mon 17 Oct 2022 12:34:03 AM UTC: 
+ heap.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:49:33: error: invalid operands to binary != (have ‘heapElem’ {aka ‘struct nodo’} and ‘heapElem’ {aka ‘struct nodo’})
+   49 |   while(pq->heapArray[pq->size] != pq->heapArray[0])
+      |         ~~~~~~~~~~~~~~~~~~~~~~~ ^~ ~~~~~~~~~~~~~~~~
+      |                      |                          |
+      |                      heapElem {aka struct nodo} heapElem {aka struct nodo}
+Compilation failed
+574ee9c

@@ -429,3 +429,14 @@ heap.c:67:7: error: variable ‘s’ set but not used [-Werror=unused-but-set-va
 cc1: all warnings being treated as errors
 Compilation failed
 aeae598
+Mon 17 Oct 2022 01:44:57 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:67:7: error: variable ‘s’ set but not used [-Werror=unused-but-set-variable]
+   67 |   int s, actual=0;
+      |       ^
+cc1: all warnings being treated as errors
+Compilation failed
+b85e609

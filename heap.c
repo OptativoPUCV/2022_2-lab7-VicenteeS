@@ -71,7 +71,7 @@ void heap_pop(Heap* pq)
 
   //s = pq->size;
   
-  while((actual * 2 < pq->size) && (pq->heapArray[actual].priority < pq->heapArray[(actual*2) +1].priority) || (pq->heapArray[actual].priority < pq->heapArray[(actual*2)+2].priority ))
+  while((actual * 2 < pq->size) && ((pq->heapArray[actual].priority < pq->heapArray[(actual*2) +1].priority) || (pq->heapArray[actual].priority < pq->heapArray[(actual*2)+2].priority )))
   {
     if(pq->heapArray[(actual*2) +1].priority > pq->heapArray[(actual*2) +2].priority)
     {

@@ -43,12 +43,12 @@ void heap_push(Heap* pq, void* data, int priority)
     pq->capac = (pq->capac*2) + 1;
     pq->heapArray = realloc (pq->heapArray, pq->capac); 
   }
-  pq->heapArray[size] = elemento;
+  pq->heapArray[pq->size] = elemento;
   
 
   while(elemento != pq->heapArray[0])
   {
-    if(elemento.priority > pq->heapArray[(size-1)/2]->priority)
+    if(elemento.priority > pq->heapArray[(pq->size - 1)/2]->priority)
     {
       aux = pq->heapArray[(size-1)/2];
       pq->heapArray[(size-1)/2] = elemento.priority;

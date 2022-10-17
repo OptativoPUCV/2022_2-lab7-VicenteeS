@@ -440,3 +440,9 @@ heap.c:67:7: error: variable ‘s’ set but not used [-Werror=unused-but-set-va
 cc1: all warnings being treated as errors
 Compilation failed
 b85e609
+Mon 17 Oct 2022 01:45:24 AM UTC: 
+ heap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  7|1
+total_score: 60/70
+b3be2a6

@@ -284,3 +284,14 @@ heap.c:53:28: error: ‘size’ undeclared (first use in this function)
 heap.c:53:28: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 fb01481
+Mon 17 Oct 2022 12:17:41 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:53:28: error: ‘size’ undeclared (first use in this function)
+   53 |       aux = pq->heapArray[(size-1)/2];
+      |                            ^~~~
+heap.c:53:28: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+ef49fa4

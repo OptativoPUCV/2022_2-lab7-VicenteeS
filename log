@@ -378,3 +378,9 @@ heap.c:45:32: error: expected ‘;’ before ‘realloc’
       |                                ;
 Compilation failed
 a330eb6
+Mon 17 Oct 2022 12:45:24 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|2
+total_score: 35/70
+98150c1
